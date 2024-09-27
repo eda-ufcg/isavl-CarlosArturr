@@ -1,4 +1,5 @@
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
 public class RoteiroTest {
@@ -57,6 +58,12 @@ public class RoteiroTest {
     	for (int i : values)
     		bst.add(i);
 		assertTrue(bst.isAVL());
+
+		bst = new BST();
+		values = new int[]{10, 7, 8, 9, 11, 12};
+    	for (int i : values)
+    		bst.add(i);
+		assertFalse(bst.isAVL());
     }
 
 }

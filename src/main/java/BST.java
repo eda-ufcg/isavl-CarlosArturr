@@ -8,14 +8,26 @@ public class BST {
     private int size;
 
     public boolean isAVL() {
-        int balanceAVL = balance(root);
-        return balanceAVL >-2 && balanceAVL < 2;
+        return balanceAVL(root);
+    }
+
+    private boolean balanceAVL(Node node){
+        if(node != null){
+           int balanceNode = balance(node);
+           if(balanceNode > -2 && balanceNode < 2){
+                return (balanceAVL(node.left) && balanceAVL(node.right));
+           }else{
+                return false;
+           }
+        }
+        
+        return true;
     }
     
     /**
      * Retorna a altura da árvore.
      */
-    public int height() {
+    public int height(){
         return height(root);
     }
 
