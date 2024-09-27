@@ -1,8 +1,8 @@
 # Identificação
 
-* Nome: 
-* Email (@ccc): 
-* Matrícula: 
+* Nome: Carlos Artur Santana Sales
+* Email (@ccc): carlos.artur.santana.sales@ccc.ufcg.edu.br
+* Matrícula: 123110250
 
 # Roteiro: isAVL
 
